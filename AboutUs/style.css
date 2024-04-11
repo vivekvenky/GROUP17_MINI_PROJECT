@@ -1,0 +1,122 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&family=Oswald&family=Poppins:wght@300;600&family=Roboto+Slab&family=Roboto:wght@400;500;700&display=swap');
+*{
+    padding: 0;
+    margin:0;
+    box-sizing:border-box;
+}
+body {
+    line-height: 1.6;
+    margin: 0;
+    font-family: 'Poppins';
+    background: linear-gradient(to left, rgba(1, 11, 75, 0.4), rgba(5, 1, 66, 0.2)), url('/ContactUs/Images/NormalBg.jpeg');
+    background-size: cover;
+
+}
+nav{
+    padding: 30px;
+    width: 100%;
+    height: 100px;
+    color:white;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+   font-size: 2rem;
+   letter-spacing: 2px;
+   font-family: inherit;
+}
+.menu a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    position: relative;
+}
+.menu a:before{
+    content:"" ;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    border-bottom: 2px solid darkblue;
+    transition: 0.4s linear;
+}
+.menu a:hover:before {
+    width: 90%;
+}
+.contact-us{
+    background-color: darkblue;
+    color: white;
+}
+.Register a{
+    color:white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    background: darkblue;
+    border-radius: 10px;
+}
+.Register a:hover{
+    color: darkblue;
+    background: white;
+    transition: 0.4s linear;
+}
+
+header {
+    background: darkblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+section {
+    background: lightblue;
+    color: #333;
+    padding: 40px 20px;
+    text-align: center;
+}
+
+h2 {
+    color: #333;
+}
+
+p {
+    max-width: 800px;
+    margin: 20px auto;
+    font-size: 18px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+li {
+    display: inline-block;
+    margin: 0 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+li:hover {
+    transform: scale(1.2);
+    font-weight: bold;    
+    transition: transform 0.3s ease-in-out;
+}
+
+footer {
+    background: darkblue;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    margin-top: auto;
+}
+img{
+    width: 100px;
+    height: 100px;
+    border-radius: 10px;
+}

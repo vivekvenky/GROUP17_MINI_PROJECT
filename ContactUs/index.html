@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            Fetal-X
+        </div>
+         <div class="menu">
+            <a href="http://127.0.0.1:5500/Main_page/code/index.html">Home</a>
+            <a href="http://127.0.0.1:5500/DoctorPage/index.html">Doctor's Page</a>
+            <a href="http://127.0.0.1:5500/AboutUs/index.html">About Us</a>                
+            <a href="http://127.0.0.1:5500/Werecommend/index.html">We Recommend</a>
+            <a href="http://127.0.0.1:5500/ContactUs/index.html">Contact Us</a>
+         </div>
+         <div class="Register">
+            <a href="http://152.67.9.127:5000/">Register</a>
+         </div>
+    </nav>
+    <div class="container">
+        <h1>Contact Us</h1>
+        <form action="https://api.web3forms.com/submit" method="POST">
+            <input type="hidden" name="access_key" value="a8661bf2-26cf-46b5-818d-ab5baadedb24">
+            <div class="form-group">
+                <label for="name">Name :</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email :</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone_number">Phone Number :</label>
+                <input type="text" id="phone_number" name="phone_number" required>
+                </div>
+                <div class="form-group">
+                <label for="message">Message :</label>
+                <textarea id="message" name="message" required></textarea>
+            </div>
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+    <footer>
+        &copy; Team 17. All rights reserved.
+    </footer>
+<script src="https://smtpjs.com/v3/smtp.js"></script>
+<script>
+    function sendEmail() {
+        Email.send({
+            Host: "smtp.gmail.com",
+            Username: "gmadye13@gmail.com",
+            Password: "password",
+            To: 'gmadye13@gmail.com',
+            From: document.getElementById('email').value,
+            Subject: "This is the subject",
+            Body: "And this is the body"
+        }).then(
+            message => alert(message)
+        );
+    }
+</script>
+</body>
+</html>
